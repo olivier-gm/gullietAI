@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="static\css\header.css">
+  <link rel="stylesheet" href="static\css\menu_body.css">
+  <link rel="icon" href="logos/logico_black.png" type="image/x-icon">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+
+  <script defer src="static\js\write.js"></script>
+  <script defer src="static\js\funciones_menu.js"></script>
+
+  <title>Gullieth</title>
+</head>
+
+<body class="entrada_body">
+
+  <header class="header">
+    <div class="bottom-bar">
+      <div class="bottom-bar__content">
+        <a href="#" class="logo">
+          <img class="logo__img" src="logo.png" alt="logo">
+
+        </a>
+    
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link ai" href="#">Gullieth AI <i class='bx bx-shape-triangle larger-icon' style="color: rgb(210, 184, 14);"></i></a>
+            </li>
+          
+          
+          </ul>
+        </nav>
+  
+        <div class="hamburger">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section>
+    <div class="columnas_contenedor">
+
+
+      <form id="dynamicForm">
+        <input type="text" placeholder="Universidad" id="universidad" maxlength="120" required>
+        <input type="text" placeholder="Área" id="area" maxlength="40" required>
+        <input type="text" placeholder="Carrera" id="carrera" maxlength="40" required>
+        <input type="text" placeholder="Título del trabajo" id="titulo" required>
+        
+        <input type="text" placeholder="Docente" id="docente" required>
+        <input type="text" placeholder="Asignatura" id="asignatura" required>
+        <div id="professorContainer"></div>
+        
+        <input type="text" placeholder="Período" id="periodo" required>
+        <input type="text" placeholder="Ciudad" id="ciudad" required>
+        <input type="date" id="fecha" required>        
+        <label for="studentCount" style="color: rgb(255, 255, 255);">Cantidad de estudiantes:</label>
+        <select id="studentCount">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+        </select>
+        
+        <div id="studentContainer"></div>
+        
+       
+        <input type="text" placeholder="Introducción" id="introduccion" required>
+        <input type="text" placeholder="Contenido" id="contenido" required>
+        <input type="text" placeholder="Conclusión" id="conclusion" required>
+        
+    </form>
+      
+
+
+
+
+
+      <div class="Raiz_t">
+        <div class="trabajo">
+          <div class="edu_info">
+          <h4 class="r">REPUBLICA BOLIVARIANA DE VENEZUELA</h4>
+          <h4 class="m">MINISTERIO DE EL PODER POPULAR PARA LA EDUCACION <span class="span">UNIVERSITARIA</span></h4>
+          <h4 id="universidadDisplay">Universidad</h4>
+          <h4 id="areaDisplay">Área</h4>
+          <h4 id="carreraDisplay">Carrera</h4>
+          <h1 class="titulo">TITULO</h1>
+        </div>
+  
+          
+          <div class="pinfosec">
+            <div class="primera_sec">
+            <H3>Docente:</H3>
+            <p id="docenteDisplay"></p>
+            <H3>Asignatura:</H3>
+            <p id="asignaturaDisplay"></p>
+            <h3>Periodo:</h3>
+            <p id="periodoDisplay"></p>
+          </div>
+          <div class="ciudad_f">
+            <p id="ciudadDisplay"></p>
+            <p id="fechaDisplay"></p>
+        </div>
+        <div class="categoria_al">
+          <ul>
+            <H3>Alumno:</H3>
+            <ul  class="texto"  id="alumnoList"></ul>
+          </ul>
+          <ul>
+            <h3>C.I:</h3>
+            <ul class="texto"  id="ciList"></ul>
+          </ul>
+  
+        </div>
+          </div>
+  
+  
+        </div>
+      </div>
+      <form action="">
+        <button type="button" id="submitButton">Guardar</button>
+      </form>
+    </div>
+
+  </section>
+  
+</body>
+
+</html>
